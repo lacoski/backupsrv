@@ -1,3 +1,7 @@
+Run masterscript:
+  cmd.script:
+    - source: salt://splunk/pkg/removesplunk.sh    
+
 {% if pillar['splunk_pkg_file'] is not none %}
 load_pkg_forward:
   file.managed:
