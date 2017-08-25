@@ -10,6 +10,6 @@ user_admin_{{ user }}:
 user_normal_{{ user }}:
  user.present:
  - name: {{ user }}
- #- password: {{ pillar['normal_passwd'] }}
+ - password: {{ pillar['normal_passwd'] }}
  #- password: $1$pvaECagD$N9W67.ihtTPsrazryFYMt.
 {% endfor %}
