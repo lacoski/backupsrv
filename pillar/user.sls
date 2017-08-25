@@ -6,4 +6,4 @@ normal_users:
  - thanh123
  - thanh1
  - thanh2
-normal_passwd: $1$MNq61HP1$Wtl82RjvcI/SDvMntjBO/1
+normal_passwd: $1$BTybm6Gj$EOTimsVqZrDRalX2zF2890
