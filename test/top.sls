@@ -1,4 +1,4 @@
 test:
  'minion1':
-  - tests.cmd
+  #- tests.cmd
   - openssh
