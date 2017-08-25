@@ -1,0 +1,7 @@
+base:
+ 'osfinger:CentOS-6':
+  - match: grain
+  - users_and_ssh
+webserver:
+ '*minion*':
+  - apache

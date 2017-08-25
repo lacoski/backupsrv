@@ -1,0 +1,16 @@
+{% set server = salt['grains.filter_by']({
+    'Debian': {
+        'pkgs': ['openssh-server'],
+        'service': 'ssh',
+        'config': '/etc/ssh/sshd_config',
+        'lib_dir': '/usr/lib/openssh',
+        'user': {},
+    },
+    'RedHat': {
+        'pkgs': ['openssh'],
+        'service': 'sshd',
+        'config': '/etc/ssh/sshd_config',
+        'lib_dir': '/usr/libexec/openssh',
+        'user': {},
+    },
+}, merge=salt['pillar.get']('openssh:server')) %}
