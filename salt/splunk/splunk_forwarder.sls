@@ -32,5 +32,6 @@ run_deploy:
   cmd.run:
     - name: {{ pillar['splunk_path_cmd'] }}/splunk set deploy-poll {{ pillar['splunk_deploy_server'] }}:{{ pillar['splunk_deploy_port'] }} -auth {{ pillar['splunk_user'] }}:{{ pillar['splunk_passwd'] }}
     - require:
+      - cmd: run_accept_license
       - cmd: run_pkg_forwad
 {%endif %}
